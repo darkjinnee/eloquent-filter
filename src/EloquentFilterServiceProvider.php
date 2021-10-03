@@ -2,8 +2,13 @@
 
 namespace Darkjinnee\EloquentFilter;
 
+use Illuminate\Http\Request;
 use Illuminate\Support\ServiceProvider;
 
+/**
+ * Class EloquentFilterServiceProvider
+ * @package Darkjinnee\EloquentFilter
+ */
 class EloquentFilterServiceProvider extends ServiceProvider
 {
     /**
@@ -35,7 +40,7 @@ class EloquentFilterServiceProvider extends ServiceProvider
 
         // Register the service the package provides.
         $this->app->singleton('eloquent-filter', function ($app) {
-            return new EloquentFilter;
+            return new EloquentFilter($app->make(Request::class));
         });
     }
 
