@@ -1,5 +1,6 @@
 # Eloquent Filter
-This package allows you to filter eloquent models
+This package allows you to filter eloquent models.  
+Documentation: [Wiki](wiki)
 
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Total Downloads][ico-downloads]][link-downloads]
@@ -20,6 +21,7 @@ MIT. Please see the [LICENSE](LICENSE) for more information.
 [ico-version]: https://img.shields.io/packagist/v/darkjinnee/eloquent-filter.svg?style=flat-square
 [ico-downloads]: https://img.shields.io/packagist/dt/darkjinnee/eloquent-filter.svg?style=flat-square
 
+[wiki]: https://github.com/darkjinnee/eloquent-filter/wiki
 [link-packagist]: https://packagist.org/packages/darkjinnee/eloquent-filter
 [link-downloads]: https://packagist.org/packages/darkjinnee/eloquent-filter
 [link-author]: https://github.com/darkjinnee
