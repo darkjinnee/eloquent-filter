@@ -1,6 +1,6 @@
 # Eloquent Filter
 This package allows you to filter eloquent models.  
-Documentation: [Wiki][wiki]
+[**Documentation**][wiki]
 
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Total Downloads][ico-downloads]][link-downloads]
