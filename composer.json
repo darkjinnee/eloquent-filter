@@ -1,7 +1,7 @@
 {
     "name": "darkjinnee/eloquent-filter",
     "description": "This package allows you to filter eloquent models",
-    "version": "1.1.0",
+    "version": "1.2.0",
     "license": "MIT",
     "authors": [
         {

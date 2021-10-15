@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/darkjinnee/eloquent-filter/compare/v1.1.0...v1.2.0) (2021-10-15)
+
+
+### Features
+
+* add the ability to specify the path ([018b98b](https://github.com/darkjinnee/eloquent-filter/commit/018b98be6485663222fcf908611952a0a9321e81))
+
 ## [1.1.0](https://github.com/darkjinnee/eloquent-filter/compare/v1.0.0...v1.1.0) (2021-10-15)
 
 
