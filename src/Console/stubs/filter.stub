@@ -1,0 +1,10 @@
+<?php
+
+namespace {{ namespace }};
+
+use Darkjinnee\EloquentFilter\EloquentFilter;
+
+class {{ class }} extends EloquentFilter
+{
+    //
+}

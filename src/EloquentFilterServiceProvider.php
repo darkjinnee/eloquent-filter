@@ -2,6 +2,7 @@
 
 namespace Darkjinnee\EloquentFilter;
 
+use Darkjinnee\EloquentFilter\Console\FilterMakeCommand;
 use Illuminate\Http\Request;
 use Illuminate\Support\ServiceProvider;
 
@@ -82,6 +83,8 @@ class EloquentFilterServiceProvider extends ServiceProvider
         ], 'eloquent-filter.views');*/
 
         // Registering package commands.
-        // $this->commands([]);
+         $this->commands([
+             FilterMakeCommand::class
+         ]);
     }
 }
