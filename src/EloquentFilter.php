@@ -2,6 +2,7 @@
 
 namespace Darkjinnee\EloquentFilter;
 
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 
@@ -14,11 +15,12 @@ class EloquentFilter
     /**
      * @var Request
      */
-    protected $request;
+    protected Request $request;
+
     /**
-     * @var
+     * @var Builder
      */
-    protected $query;
+    protected Builder $query;
 
     /**
      * @param Request $request
@@ -29,9 +31,9 @@ class EloquentFilter
     }
 
     /**
-     * @param $query
+     * @param Builder $query
      */
-    public function apply($query)
+    public function apply(Builder $query): void
     {
         $this->query = $query;
 
