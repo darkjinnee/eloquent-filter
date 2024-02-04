@@ -8,16 +8,15 @@ use Illuminate\Database\Eloquent\Builder;
 /**
  * Trait Filterable
  *
- * @package Darkjinnee\EloquentFilter\Traits
  * @method static filter(EloquentFilter $eloquentFilter)
  */
 trait Filterable
 {
     /**
-     * @param Builder $query
-     * @param EloquentFilter $eloquentFilter
+     * @param  Builder  $query
+     * @param  EloquentFilter  $eloquentFilter
      */
-    public function scopeFilter(Builder $query, EloquentFilter $eloquentFilter) :void
+    public function scopeFilter(Builder $query, EloquentFilter $eloquentFilter): void
     {
         $eloquentFilter->apply($query);
     }

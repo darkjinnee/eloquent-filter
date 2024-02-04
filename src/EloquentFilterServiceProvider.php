@@ -8,7 +8,6 @@ use Illuminate\Support\ServiceProvider;
 
 /**
  * Class EloquentFilterServiceProvider
- * @package Darkjinnee\EloquentFilter
  */
 class EloquentFilterServiceProvider extends ServiceProvider
 {
@@ -48,9 +47,9 @@ class EloquentFilterServiceProvider extends ServiceProvider
     /**
      * Get the services provided by the provider.
      *
-     * @return array
+     * @return array<string>
      */
-    public function provides()
+    public function provides(): array
     {
         return ['eloquent-filter'];
     }
@@ -83,8 +82,8 @@ class EloquentFilterServiceProvider extends ServiceProvider
         ], 'eloquent-filter.views');*/
 
         // Registering package commands.
-         $this->commands([
-             FilterMakeCommand::class
-         ]);
+        $this->commands([
+            FilterMakeCommand::class,
+        ]);
     }
 }

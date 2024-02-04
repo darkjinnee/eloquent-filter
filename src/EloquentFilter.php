@@ -8,7 +8,6 @@ use Illuminate\Support\Str;
 
 /**
  * Class EloquentFilter
- * @package Darkjinnee\EloquentFilter
  */
 class EloquentFilter
 {
@@ -23,7 +22,7 @@ class EloquentFilter
     protected Builder $query;
 
     /**
-     * @param Request $request
+     * @param  Request  $request
      */
     public function __construct(Request $request)
     {
@@ -31,7 +30,7 @@ class EloquentFilter
     }
 
     /**
-     * @param Builder $query
+     * @param  Builder  $query
      */
     public function apply(Builder $query): void
     {
@@ -40,9 +39,8 @@ class EloquentFilter
         foreach ($this->request->all() as $key => $value) {
             $method = Str::camel($key);
             if (method_exists($this, $method)) {
-                call_user_func_array([$this, $method], (array)$value);
+                call_user_func_array([$this, $method], (array) $value);
             }
         }
     }
-
 }

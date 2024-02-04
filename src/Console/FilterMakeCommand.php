@@ -48,7 +48,8 @@ class FilterMakeCommand extends GeneratorCommand
     protected function getDefaultNamespace($rootNamespace): string
     {
         $path = config('eloquent-filter.path_to_filters', 'Filters');
-        $pathNamespace = str_replace('/', '\\', trim($path, ' ' . '\/'));
-        return $rootNamespace . '\\' . $pathNamespace;
+        $pathNamespace = str_replace('/', '\\', trim($path, ' '.'\/'));
+
+        return $rootNamespace.'\\'.$pathNamespace;
     }
 }
