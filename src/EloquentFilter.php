@@ -37,7 +37,7 @@ class EloquentFilter
         $this->query = $query;
 
         foreach ($this->request->all() as $key => $value) {
-            $method = Str::camel($key);
+            $method = method_exists(Str::class, 'camelCase') ? Str::camelCase($key) : Str::camel($key);
             if (method_exists($this, $method)) {
                 call_user_func_array([$this, $method], (array) $value);
             }
