@@ -16,7 +16,8 @@ trait Filterable
      * @param  Builder  $query
      * @param  EloquentFilter  $eloquentFilter
      */
-    public function scopeFilter(Builder $query, EloquentFilter $eloquentFilter): void
+    public function scopeFilter(Builder        $query,
+                                EloquentFilter $eloquentFilter): void
     {
         $eloquentFilter->apply($query);
     }
